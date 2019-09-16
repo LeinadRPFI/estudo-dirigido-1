@@ -8,7 +8,7 @@
 
 using namespace std;
 
-//Somatório dos elementos do vetor
+//SomatÃ³rio dos elementos do vetor
 
 void somavetor(vector<int> lista){
 
@@ -20,7 +20,7 @@ void somavetor(vector<int> lista){
 
 
 
-cout << "O SOMATÓRIO DOS ELEMENTOS É: " << somatorio << endl;
+cout << "O SOMATÃ“RIO DOS ELEMENTOS Ã‰: " << somatorio << endl;
 
 }
 
@@ -36,11 +36,11 @@ double media = 0;
 
     media = media/lista.size();
 
-    cout << "A MÉDIA DOS ELEMENTOS É: " << fixed << setprecision(2) << media << endl;
+    cout << "A MÃ‰DIA DOS ELEMENTOS Ã‰: " << fixed << setprecision(2) << media << endl;
 
 }
 
-// Zerando os negativos e imprimindo a média
+// Zerando os negativos e imprimindo a mÃ©dia
 
 void negativos(vector<int> lista){
 
@@ -55,7 +55,7 @@ void negativos(vector<int> lista){
     mediavetor(lista);
 }
 
-// Zerando os repitidos e imprimindo a média e o somatório
+// Zerando os repitidos e imprimindo a mÃ©dia e o somatÃ³rio
 
 void repitidos(vector<int> lista){
 
@@ -107,6 +107,10 @@ void ordenar(vector<int> lista){
 int main (){
 
     setlocale(LC_ALL,"Portuguese");
+    
+    cout  << "           ========== " "BEM VINDO CONSAGRADISSIMO USUÃRIO" " ==========" << endl;
+    cout  << "           ========== " "CALCULOS COM NUMEROS DE UM VETOR " " ==========" << endl << endl << endl;
+
 
     vector<int> numeros;
     string decisao;
@@ -116,12 +120,12 @@ int main (){
 
 
     int valor;
-    cout << "Digite um numero inteiro" << endl;
+    cout << "Digite um numero inteiro para o seu vetor: " << endl;
 
     cin >> valor;
     numeros.push_back(valor);
 
-    cout << "Deseja adicionar outro numero?(Sim/Não)" << endl;
+    cout << "Deseja adicionar outro numero?(Sim/NÃ£o)" << endl;
 
     cin >> decisao;
 
@@ -135,11 +139,11 @@ int main (){
         sort(begin(numeros), end(numeros));
 
     cout << endl << endl;
-    cout << "Digite [1] para imprimir o somatória dos numeros" << endl << endl;
+    cout << "Digite [1] para imprimir o somatÃ³ria dos numeros" << endl << endl;
     cout << "Digite [2] para imprimir a media dos numeros" << endl << endl;
-    cout << "Digite [3] para imprimir a media e o somatório dos numeros" << endl << endl;
-    cout << "Digite [4] para substituir por zero todos os valores negativos e imprimir a média" << endl << endl;
-    cout << "Digite [5] para substituir por zero todos os valores repetidos e imprimir a média e o somatório" << endl << endl;
+    cout << "Digite [3] para imprimir a media e o somatÃ³rio dos numeros" << endl << endl;
+    cout << "Digite [4] para substituir por zero todos os valores negativos e imprimir a mÃ©dia" << endl << endl;
+    cout << "Digite [5] para substituir por zero todos os valores repetidos e imprimir a mÃ©dia e o somatÃ³rio" << endl << endl;
     cout << "Digite [6] para mostrar o vetor organizado" << endl << endl;
     cout << "Digite [0] para sair do programa" << endl << endl;
 
@@ -195,7 +199,7 @@ int main (){
 
     }while(decisao2 != 0);
 
-    cout << endl << "Não me abandonas usuário, eu preciso de ti :C";
+    cout << endl << "NÃ£o me abandonas usuÃ¡rio, eu preciso de ti :C";
 
     return 0;
 }
